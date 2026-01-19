@@ -2,7 +2,7 @@ import telebot
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton, ReplyKeyboardMarkup, KeyboardButton
 
 # ТОКЕН ДЛЯ БОТА
-TOKEN = '8572833259:AAFqtPEt1RhCNBSP8YkQXizywgGvWFcquso'
+
 bot = telebot.TeleBot(TOKEN)
 
 # Placeholder for unanswered questions
