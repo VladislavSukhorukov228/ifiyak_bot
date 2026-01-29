@@ -677,7 +677,7 @@ def handle_edu_sub(chat_id, data):
         markup.add(InlineKeyboardButton("Расписание на сайте ИФиЯК", url="https://ifiyak.sfu-kras.ru/raspisanie/"))
         markup.add(InlineKeyboardButton("Расписание на сайте СФУ", url="https://sfu.ru/ru/education/schedule"))
         bot.send_message(chat_id, text, reply_markup=markup)
-        bot.send_message(chat_id, reply_markup=back_home_buttons('edu_schedule', 'main'))
+        bot.send_message(chat_id, text, reply_markup=back_home_buttons('edu_schedule', 'main'))
     elif data == 'edu_sched_where':
         bot.send_message(chat_id, "Вы спросили: Где можно посмотреть расписание?")
         text = "Вы всегда можете найти актуальное расписание занятий двумя способами: На сайте ИФиЯК в разделе «Студенту»; На сайте СФУ в разделе «Расписание»."
@@ -685,7 +685,7 @@ def handle_edu_sub(chat_id, data):
         markup.add(InlineKeyboardButton("Расписание на сайте ИФиЯК", url="https://ifiyak.sfu-kras.ru/raspisanie/"))
         markup.add(InlineKeyboardButton("Расписание на сайте СФУ", url="https://sfu.ru/ru/education/schedule"))
         bot.send_message(chat_id, text, reply_markup=markup)
-        bot.send_message(chat_id, reply_markup=back_home_buttons('edu_schedule', 'main'))
+        bot.send_message(chat_id, text, reply_markup=back_home_buttons('edu_schedule', 'main'))
     elif data == 'edu_sched_break':
         bot.send_message(chat_id, "Вы спросили: Сколько длится большая перемена?")
         text = "Большая перемена длится 35 минут. Этого времени вполне достаточно, чтобы отдохнуть и пообедать."
